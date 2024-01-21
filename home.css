@@ -1,0 +1,166 @@
+@charset "utf-8";
+    body{
+        background-color: rgba(11, 11, 16, 0.637);
+        padding: 2rem;
+        color: white;
+
+    }
+
+    /* header */
+    .title{
+        font-size: 1.5rem;
+        font-weight: bold;
+
+    }
+
+    .upload{
+        background-color: rgba(109, 109, 130, 0.637);;
+        display: flex;
+        height: 300px;
+        margin-top: 50px;
+        position: relative;
+        /* justify-content: flex-end;  */
+    }
+
+    .button_upload{
+        background-color: aqua;
+        display: flex;
+        width: 20%;
+        height: 30px;
+        border: 10px solid beige;
+        border-radius: 0 4px 0 4px;
+        justify-content: flex-end;
+    }
+    /* 動画アップロード */
+
+    
+    .videoUpload{
+        /* padding: 300px; */
+        position: relative;
+    }
+    .upload_video{
+        /* flex:1 */
+        background-color: brown;
+        width: 50%;
+        /* margin: auto; */
+        
+        
+
+    }
+    .video_input{
+        background-color: beige;
+        height: 50%;
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+
+    }
+
+    .video{
+        margin: 0 auto;
+        font-size: 1rem;
+        /* text-align: center; */
+        /* border-bottom:  5px solid black; */
+        width: 50%;
+        text-align: center;
+        padding: 10px auto;
+        font-weight: bold;
+    }
+
+
+    #video_Upload{
+        color: black;
+        width: 0%;
+    }
+
+    .icon_video{
+        background-color: aliceblue;
+        margin: 0 auto;
+    }
+
+    .border_video{
+        position: absolute;
+        border: 2px dashed #494949;
+        margin: 5px;
+        width: 50%;
+        height: 100%;
+        z-index: inherit;
+
+    }
+
+
+    /* 選手データアップロード */
+    .upload_player{
+        width: 50%;
+        /* position: relative; */
+
+    }
+
+    .player{
+        margin: 0 auto;
+        /* position: relative; */
+        width: 70%;
+        /* text-align: center; */
+        font-size: 1rem;
+        /* border-bottom:  5px solid black; */
+        text-align: center;
+        padding: 10px auto;
+        font-weight: bold;
+    }
+
+   
+    .csv{
+        display: flex;
+        flex-wrap: wrap;
+        height: 50%;
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 5px;
+        margin-top: 30px;
+    }
+    .box{
+        background-color: aliceblue;
+        height: 20px;
+        width: 15px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .csv_button{
+        border-radius: 4px 0 4px 0;
+        border-color: black;
+        background-color: azure;
+        border: solid;
+        width: 100%;
+        height: 25%;
+        text-align: center;
+        transform: 0.3s;
+        display: block;
+        padding-top: 3px;
+        /* padding: 3px 20px 0 20px; */
+        margin: 0 30%;
+    }
+    .csv_button:hover{
+        background-color: aqua;
+    }
+    *{
+        /* background-color: rgb(6, 26, 43) !important; */
+        /* color: white !important; */
+    }
+    .drop{
+        width: 100%;
+        text-align: center;
+    }
+    .border_csv{
+        position: absolute;
+        border: 2px dashed #494949;
+        margin: 5px;
+        width: 50%;
+        height: 100%;
+        z-index: inherit;
+
+    }
+    
