@@ -1,0 +1,28 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二次元動作投手解析</title>
+    <link rel="stylesheet" href=".css">
+
+</head>
+<body>
+    <!-- 動画 -->
+    <video width="960" height="540" id="videoPlayer" controls>
+        <source src="{{ video_url }}" type="video/mp4">
+    </video>
+    <br>
+    <!-- スライダー -->
+    <input type="range" id="frameSlider" min="0" max="300" step="1" value="0">
+    <span id="currentFrame">0</span>
+    <br>
+    <!-- フットコンタクトフレーム決定ボタン -->
+    <button id="FootContactButton">フットコンタクト</button>
+    <!-- リリースフレーム決定ボタン -->
+    <button id="ReleaseButton">リリース</button>
+    <br>
+    <!-- 解析ボタン -->
+    <button onclick="postData()">解析</button>
+    <script src="../static/main.js"></script>
+</body>
+</html>
