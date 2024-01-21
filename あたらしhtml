@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/> -->
+    <!-- reset.css ress -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <label class="title">二次元投手解析</label>
+    <br>
+    <div class="upload">
+            <!-- 動画アップロード -->
+            <form class="upload_video" action="/upload" method="post" enctype="multipart/form-data">
+                <div class="video" style="background-color: rgb(81, 17, 17);" class="video" for="videoUpload" >動画アップロード</div>
+                <div class="video_input">
+                    <svg  class="icon_video" xmlns="http://www.w3.org/2000/svg" width="70px" height="70px" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:; margin:auto;"><path d="M4 8H2v12a2 2 0 0 0 2 2h12v-2H4z"></path><path d="M20 2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm-9 12V6l7 4z"></path></svg>
+                    <label for="videoUpload" class="csv_button" style="color: black;">ファイルの表示<input style="width: 0%;" type="file" class="videoUpload" id="videoUpload" name="video" accept="video/*"></label>
+                    <div class="drop">ドラック＆ドロップもできます</div>
+
+                </div>
+                <input class="button_upload" type="submit" id="videoUpload" value="アップロード">
+            </form> 
+       
+
+        <!-- 選手情報csvアップロード -->
+        <form  class="upload_player" action="/upload" method="post" enctype="multipart/form-data">
+           <div class="border_csv">
+                <div  style="background-color:rgb(31, 59, 59)"  class="player" for="csvUpload">選手データアップロード</div>
+                <!-- <br> -->
+                <div style="background-color: beige;" class="csv">
+                    <svg class="icon_csv" xmlns="http://www.w3.org/2000/svg" width="70px" height="70px" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;margin:auto;"><path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path><path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>
+
+                    <label for="csvUpload" class="csv_button" style="color: black;">ファイルの表示<input  style="width:0%; background-color:aqua;" type="file" id="csvUpload" name="csv" accept=".csv"></label>
+                    <div class="drop">ドラック＆ドロップもできます</div>
+                </div>
+                <input class="button_upload" style="background-color:rgb(44, 97, 79) ;" type="submit" id="csvUpload" value="アップロード">
+           </div>
+            
+        </form>
+    </div>
+   
+</body>
+</html>
+
